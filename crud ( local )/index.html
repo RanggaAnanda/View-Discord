@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD Jadwal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Jadwal</h1>
+
+        <div class="controls">
+            <input type="text" id="jamInput" placeholder="Contoh: 13:00-14:00">
+            <button onclick="addJam()">Tambah Jam</button>
+        </div>
+
+        <table id="jadwalTable" border="1">
+            <thead>
+                <tr>
+                    <th>Jam / Hari</th>
+                    <th>Senin</th>
+                    <th>Selasa</th>
+                    <th>Rabu</th>
+                    <th>Kamis</th>
+                    <th>Jumat</th>
+                    <th>Sabtu</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- DIISI VIA JS -->
+            </tbody>
+        </table>
+
+        <br>
+        <button onclick="exportJSON()" id="save">SAVE</button>
+    </div>
+
+    <script src="crud.js"></script>
+</body>
+
+</html>
